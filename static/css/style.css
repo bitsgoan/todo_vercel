@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -60px; /* Set the margin-bottom property to the height of your footer */
+}
+
+.footer {
+    height: 60px; /* Set the height of your footer */
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Clearfix to prevent wrapper from collapsing */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

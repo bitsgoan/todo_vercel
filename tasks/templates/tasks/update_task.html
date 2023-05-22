@@ -1,0 +1,55 @@
+<h3> Update Task </h3>
+
+
+  <style>
+
+    body{
+      background-color: FloralWhite;
+    }
+
+    input{
+      width: 20%;
+      padding: 12px 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    input::placeholder {
+      color: #d3d3d3;
+    }
+
+    .submit{
+      background-color: #6BA3E8;
+    }
+
+    .center-column{
+      width:600px;
+      margin: 20px auto;
+      padding:20px;
+      background-color: #fff;
+      border-radius: 3px;
+      box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+    }
+
+    .item-row{
+      background-color: RoyalBlue;
+      margin: 10px;
+      padding: 14px;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 16px;
+      box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+    }
+
+    .btn-danger{
+      border-color: #e59400;
+    }
+
+  </style>
+
+
+<form method = "POST" action = "">
+	{% csrf_token %}
+	{{form}}
+	<input type="submit" name="Update a task">
+</form>
